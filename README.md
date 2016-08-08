@@ -2,6 +2,8 @@
 
 Flex based CSS grid
 
+### browser support
+
 * Chrome
 * Edge
 * Firefox
@@ -10,6 +12,8 @@ Flex based CSS grid
 * Safari 9.1+
 
 ### usage
+
+TODO
 
 ### development
 
@@ -20,4 +24,3 @@ git clone https://github.com/gzsupos/grid.git
 npm install
 gulp
 ```
-#
