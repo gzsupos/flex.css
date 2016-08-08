@@ -1,0 +1,25 @@
+.container {
+  margin-right: auto;
+  margin-left: auto; }
+
+.container-fluid {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em; }
+
+.row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -0.9375em;
+  margin-left: -0.9375em; }
+  .row.reverse {
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse; }
+
+/*# sourceMappingURL=grid.css.map */

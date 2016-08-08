@@ -1,0 +1,55 @@
+$browser-context: 16;
+
+$screen: "only screen" !default;
+
+$landscape: "#{$screen} and (orientation: landscape)" !default;
+$portrait: "#{$screen} and (orientation: portrait)" !default;
+
+$breakpoint-extra-small:  em(320) !default;
+$breakpoint-small:        em(640) !default;
+$breakpoint-medium:       em(1024) !default;
+$breakpoint-large:        em(1440) !default;
+$breakpoint-extra-large:  em(1920) !default;
+
+$range-xsmall:  (0, $breakpoint-small) !default;
+$range-small:   ($breakpoint-extra-small  + em(1), $breakpoint-small) !default;
+$range-medium:  ($breakpoint-small        + em(1), $breakpoint-medium) !default;
+$range-large:   ($breakpoint-medium       + em(1), $breakpoint-large)  !default;
+$range-xlarge:  ($breakpoint-large        + em(1), $breakpoint-extra-large) !default;
+$range-xxlarge: ($breakpoint-extra-large  + em(1), em(99999999)) !default;
+
+$xsmall-up: $screen !default;
+$xsmall-only: "#{$screen} and (max-width: #{upper-bound($range-xsmall)})" !default;
+
+$small-up: "#{$screen} and (min-width:#{lower-bound($range-small)})" !default;
+$small-only: "#{$screen} and (min-width:#{lower-bound($range-small)}) and (max-width:#{upper-bound($range-small)})" !default;
+
+$medium-up: "#{$screen} and (min-width:#{lower-bound($range-medium)})" !default;
+$medium-only: "#{$screen} and (min-width:#{lower-bound($range-medium)}) and (max-width:#{upper-bound($range-medium)})" !default;
+
+$large-up: "#{$screen} and (min-width:#{lower-bound($range-large)})" !default;
+$large-only: "#{$screen} and (min-width:#{lower-bound($range-large)}) and (max-width:#{upper-bound($range-large)})" !default;
+
+$xlarge-up: "#{$screen} and (min-width:#{lower-bound($range-xlarge)})" !default;
+$xlarge-only: "#{$screen} and (min-width:#{lower-bound($range-xlarge)}) and (max-width:#{upper-bound($range-xlarge)})" !default;
+
+$xxlarge-up: "#{$screen} and (min-width:#{lower-bound($range-xxlarge)})" !default;
+$xxlarge-only: "#{$screen} and (min-width:#{lower-bound($range-xxlarge)}) and (max-width:#{upper-bound($range-xxlarge)})" !default;
+
+$breakpoints: (
+        xs:   $breakpoint-extra-small,
+        sm:   $breakpoint-small,
+        md:   $breakpoint-medium,
+        lg:   $breakpoint-large,
+        xlg:  $breakpoint-extra-large,
+);
+
+$grid-columns: 12 !default;
+$grid-gutter-width: em(30) !default;
+
+$container: container;
+
+$row: row;
+
+$column: col;
+
