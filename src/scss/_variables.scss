@@ -1,4 +1,4 @@
-$browser-context: 16;
+$browser-context: 16 !default;
 
 $screen: "only screen" !default;
 
@@ -6,10 +6,18 @@ $landscape: "#{$screen} and (orientation: landscape)" !default;
 $portrait: "#{$screen} and (orientation: portrait)" !default;
 
 $breakpoint-extra-small:  em(320) !default;
-$breakpoint-small:        em(640) !default;
-$breakpoint-medium:       em(1024) !default;
-$breakpoint-large:        em(1440) !default;
-$breakpoint-extra-large:  em(1920) !default;
+$breakpoint-small:        em(768) !default;
+$breakpoint-medium:       em(992) !default;
+$breakpoint-large:        em(1280) !default;
+$breakpoint-extra-large:  em(1440) !default;
+
+$breakpoints: (
+        xs:   $breakpoint-extra-small,
+        sm:   $breakpoint-small,
+        md:   $breakpoint-medium,
+        lg:   $breakpoint-large,
+        xlg:  $breakpoint-extra-large,
+);
 
 $range-xsmall:  (0, $breakpoint-small) !default;
 $range-small:   ($breakpoint-extra-small  + em(1), $breakpoint-small) !default;
@@ -36,20 +44,31 @@ $xlarge-only: "#{$screen} and (min-width:#{lower-bound($range-xlarge)}) and (max
 $xxlarge-up: "#{$screen} and (min-width:#{lower-bound($range-xxlarge)})" !default;
 $xxlarge-only: "#{$screen} and (min-width:#{lower-bound($range-xxlarge)}) and (max-width:#{upper-bound($range-xxlarge)})" !default;
 
-$breakpoints: (
-        xs:   $breakpoint-extra-small,
-        sm:   $breakpoint-small,
-        md:   $breakpoint-medium,
-        lg:   $breakpoint-large,
-        xlg:  $breakpoint-extra-large,
+$ranges: (
+        xs:   $small-up,
+        sm:   $medium-up,
+        md:   $large-up,
+        lg:   $xlarge-up,
+        xlg:  $xxlarge-up,
+);
+
+$ranges-only: (
+        xs:   $small-only,
+        sm:   $medium-only,
+        md:   $large-only,
+        lg:   $xlarge-only,
+        xlg:  $xxlarge-only,
 );
 
 $grid-columns: 12 !default;
 $grid-gutter-width: em(30) !default;
 
-$container: container;
+$container: container !default;
+$row: row !default;
+$column: col !default;
 
-$row: row;
-
-$column: col;
-
+$wall-enabled: true !default;
+$wall: wall !default;
+$wall-width: 1 !default;
+$wall-style: solid !default;
+$wall-color: #000 !default;

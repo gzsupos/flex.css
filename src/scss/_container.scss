@@ -1,18 +1,11 @@
 .#{$container} {
-  & {
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  &-fluid {
-    @include container();
-  }
+  @include container();
 }
 
 @each $name, $size in $breakpoints {
-  .#{$container}-#{$name} {
-    @include media($name) {
-
+  @include media($name) {
+    .#{$container}-#{$name} {
+      max-width: $size;
     }
   }
 }

@@ -1,3 +1,7 @@
+@function directions() {
+  @return (top,right,bottom,left);
+}
+
 @function em($pixels, $context: $browser-context) {
   @if (unitless($pixels)) {
     $pixels: $pixels * 1px;

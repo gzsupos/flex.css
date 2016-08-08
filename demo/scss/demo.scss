@@ -1,0 +1,16 @@
+[demo] {
+  background: #fff;
+  [demo_container] {
+    background: #eee;
+  }
+
+  [demo_row] {
+    [class*="col"] {
+      background: #ddd;
+    }
+  }
+
+  [demo_title] {
+    text-align: center;
+  }
+}

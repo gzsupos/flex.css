@@ -1,0 +1,65 @@
+@if ($wall-enabled) {
+  @each $name, $size in $ranges-only {
+    @include media($name, $ranges-only) {
+      .#{$wall} {
+        @each $direction in directions() {
+          &-#{$direction} {
+            &-#{$name}-only {
+              @include wall($direction);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .#{$wall} {
+    @each $direction in directions() {
+      &-#{$direction} {
+        @include wall($direction);
+      }
+      &-off {
+        @each $direction in directions() {
+          &-#{$direction} {
+            @include wall-off($direction);
+          }
+        }
+      }
+    }
+  }
+
+  .#{$wall} {
+    &-justify {
+      [class*="wall-"] {
+        &:last-of-type {
+          border-right: none;
+        }
+      }
+    }
+  }
+
+  @each $name, $size in $ranges {
+    @include media($name) {
+      .#{$wall} {
+        @each $direction in directions() {
+          &-#{$direction} {
+            &-#{$name} {
+              @include wall($direction);
+            }
+          }
+        }
+
+        &-off {
+
+          @each $direction in directions() {
+            &-#{$direction} {
+              &-#{$name} {
+                @include wall-off($direction);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
