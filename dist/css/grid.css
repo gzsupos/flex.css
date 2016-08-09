@@ -234,6 +234,15 @@ body {
     justify-content: flex-start;
     text-align: start;
   }
+}
+
+@media only screen and (min-width: 20.0625em) and (-ms-high-contrast: active), only screen and (min-width: 20.0625em) and (-ms-high-contrast: none) {
+  .start-xs {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 20.0625em) {
   .center-xs {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -246,6 +255,15 @@ body {
     justify-content: flex-end;
     text-align: end;
   }
+}
+
+@media only screen and (min-width: 20.0625em) and (-ms-high-contrast: active), only screen and (min-width: 20.0625em) and (-ms-high-contrast: none) {
+  .end-xs {
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width: 20.0625em) {
   .around-xs {
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
@@ -428,6 +446,15 @@ body {
     justify-content: flex-start;
     text-align: start;
   }
+}
+
+@media only screen and (min-width: 48.0625em) and (-ms-high-contrast: active), only screen and (min-width: 48.0625em) and (-ms-high-contrast: none) {
+  .start-sm {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 48.0625em) {
   .center-sm {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -440,6 +467,15 @@ body {
     justify-content: flex-end;
     text-align: end;
   }
+}
+
+@media only screen and (min-width: 48.0625em) and (-ms-high-contrast: active), only screen and (min-width: 48.0625em) and (-ms-high-contrast: none) {
+  .end-sm {
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width: 48.0625em) {
   .around-sm {
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
@@ -622,6 +658,15 @@ body {
     justify-content: flex-start;
     text-align: start;
   }
+}
+
+@media only screen and (min-width: 62.0625em) and (-ms-high-contrast: active), only screen and (min-width: 62.0625em) and (-ms-high-contrast: none) {
+  .start-md {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 62.0625em) {
   .center-md {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -634,6 +679,15 @@ body {
     justify-content: flex-end;
     text-align: end;
   }
+}
+
+@media only screen and (min-width: 62.0625em) and (-ms-high-contrast: active), only screen and (min-width: 62.0625em) and (-ms-high-contrast: none) {
+  .end-md {
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width: 62.0625em) {
   .around-md {
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
@@ -816,6 +870,15 @@ body {
     justify-content: flex-start;
     text-align: start;
   }
+}
+
+@media only screen and (min-width: 80.0625em) and (-ms-high-contrast: active), only screen and (min-width: 80.0625em) and (-ms-high-contrast: none) {
+  .start-lg {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 80.0625em) {
   .center-lg {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -828,6 +891,15 @@ body {
     justify-content: flex-end;
     text-align: end;
   }
+}
+
+@media only screen and (min-width: 80.0625em) and (-ms-high-contrast: active), only screen and (min-width: 80.0625em) and (-ms-high-contrast: none) {
+  .end-lg {
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width: 80.0625em) {
   .around-lg {
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
@@ -1010,6 +1082,15 @@ body {
     justify-content: flex-start;
     text-align: start;
   }
+}
+
+@media only screen and (min-width: 90.0625em) and (-ms-high-contrast: active), only screen and (min-width: 90.0625em) and (-ms-high-contrast: none) {
+  .start-xlg {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 90.0625em) {
   .center-xlg {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -1022,6 +1103,15 @@ body {
     justify-content: flex-end;
     text-align: end;
   }
+}
+
+@media only screen and (min-width: 90.0625em) and (-ms-high-contrast: active), only screen and (min-width: 90.0625em) and (-ms-high-contrast: none) {
+  .end-xlg {
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width: 90.0625em) {
   .around-xlg {
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
