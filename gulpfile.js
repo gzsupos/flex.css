@@ -6,7 +6,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var merge = require('merge-stream');
 
 var demoPath = './demo/scss/**/*.scss';
-var gridpath = './src/scss/**/*.scss';
+var flexPath = './src/scss/**/*.scss';
 
 gulp.task('demo', function() {
     return gulp.src(demoPath)
@@ -20,8 +20,8 @@ gulp.task('demo', function() {
         .pipe(gulp.dest('./demo/css'));
 });
 
-gulp.task('grid', function() {
-    var normal = gulp.src(gridpath)
+gulp.task('flex', function() {
+    var normal = gulp.src(flexPath)
         .pipe(sourcemaps.init())
         .pipe(sass({
             outputStyle: 'expanded'
@@ -33,7 +33,7 @@ gulp.task('grid', function() {
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./dist/css/'));
 
-    var compressed = gulp.src(gridpath)
+    var compressed = gulp.src(flexPath)
         .pipe(sourcemaps.init())
         .pipe(sass({
             outputStyle: 'compressed'
@@ -51,9 +51,9 @@ gulp.task('grid', function() {
 
 gulp.task('watch', function() {
     gulp.watch(demoPath, ['demo']);
-    gulp.watch(gridpath, ['grid']);
+    gulp.watch(flexPath, ['flex']);
 });
 
-gulp.task('default', ['demo', 'grid', 'watch'], function(done) {
+gulp.task('default', ['demo', 'flex', 'watch'], function(done) {
     done();
 });
