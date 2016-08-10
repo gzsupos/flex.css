@@ -1,4 +1,4 @@
-# [Grid]
+# [Flex.css]
 
 Flex based CSS grid
 
@@ -16,7 +16,7 @@ Using bower:
 bower install flex.css
 ```
 
-## How to use
+### How to use
 Either include `flex.min.css` file located in the dist folder:
 
 ```html
