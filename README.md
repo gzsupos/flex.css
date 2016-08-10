@@ -2,7 +2,7 @@
 
 Flex based CSS grid
 
-### browser support
+### Browser support
 
 * Chrome
 * Edge
@@ -11,11 +11,11 @@ Flex based CSS grid
 * Opera
 * Safari 9.1+
 
-### usage
+### Usage
 
-Either include the `grid.css` file from the dist folder or include the `grid.scss` to customize it, do not modify the `_variables.scss` instead add those changes to your own settings to override
+Either include the `grid.css` file from the dist folder or include the `grid.scss` to customize it, do not modify the `_variables.scss` instead add those changes to your own settings to override.
 
-### development
+### Development
 
 Install the npm packages described in the `package.json` and verify that it works:
 
