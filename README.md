@@ -13,7 +13,7 @@ Flex based CSS grid
 
 ### usage
 
-TODO
+Either include the `grid.css` file from the dist folder or include the `grid.scss` to customize it, do not modify the `_variables.scss` instead add those changes to your own settings to override
 
 ### development
 
