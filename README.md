@@ -23,7 +23,7 @@ Either include `flex.min.css` file located in the dist folder:
 <link rel="stylesheet" href="YOUR_STYLE_PATH/flex.min.css">
 ```
 
-or include the `flex.scss` to customize it, do not modify the `_variables.scss` instead add those changes to your own settings to override.
+or include the `flex.scss` for customiization, do not modify the `_variables.scss`, instead add those changes to your own settings.
 
 ### Development
 Install the npm packages described in the `package.json` and verify that it works:
