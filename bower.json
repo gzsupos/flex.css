@@ -7,7 +7,7 @@
     "Zsupos Gábor <gabor.zsupos@gmail.com>"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/gzsupos/grid",
+  "homepage": "https://github.com/gzsupos/flex.css",
   "ignore": [
     "**/.*",
     "node_modules",
