@@ -1,23 +1,23 @@
 @mixin container($gutter: $grid-gutter-width) {
   margin-left: auto;
   margin-right: auto;
-  padding-left:  ($gutter / 2);
-  padding-right: ($gutter / 2);
+  padding-left:  (em($gutter) / 2);
+  padding-right: (em($gutter) / 2);
 }
 
 @mixin content($columns: $grid-columns, $gutter: $grid-gutter-width) {
   position: relative;
   min-height: 1px;
-  padding-right: ($gutter / 2);
-  padding-left:  ($gutter / 2);
+  padding-right: (em($gutter) / 2);
+  padding-left:  (em($gutter) / 2);
   width: 100%;
 }
 
 @mixin row($gutter: $grid-gutter-width) {
   display: flex;
   flex-wrap: wrap;
-  margin-right: ($gutter / -2);
-  margin-left: ($gutter / -2);
+  margin-right: (em($gutter) / -2);
+  margin-left: (em($gutter) / -2);
 }
 
 @mixin col($size, $columns: $grid-columns) {

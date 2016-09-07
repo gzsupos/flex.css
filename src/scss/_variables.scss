@@ -5,11 +5,11 @@ $screen: "only screen" !default;
 $landscape: "#{$screen} and (orientation: landscape)" !default;
 $portrait: "#{$screen} and (orientation: portrait)" !default;
 
-$breakpoint-extra-small:  em(320) !default;
-$breakpoint-small:        em(768) !default;
-$breakpoint-medium:       em(992) !default;
-$breakpoint-large:        em(1280) !default;
-$breakpoint-extra-large:  em(1440) !default;
+$breakpoint-extra-small:  320 !default;
+$breakpoint-small:        768 !default;
+$breakpoint-medium:       992 !default;
+$breakpoint-large:        1280 !default;
+$breakpoint-extra-large:  1440 !default;
 
 $breakpoints: (
         xs:   $breakpoint-extra-small,
@@ -17,14 +17,14 @@ $breakpoints: (
         md:   $breakpoint-medium,
         lg:   $breakpoint-large,
         xlg:  $breakpoint-extra-large,
-);
+) !default;
 
-$range-xsmall:  (0, $breakpoint-small) !default;
-$range-small:   ($breakpoint-extra-small  + em(1), $breakpoint-small) !default;
-$range-medium:  ($breakpoint-small        + em(1), $breakpoint-medium) !default;
-$range-large:   ($breakpoint-medium       + em(1), $breakpoint-large)  !default;
-$range-xlarge:  ($breakpoint-large        + em(1), $breakpoint-extra-large) !default;
-$range-xxlarge: ($breakpoint-extra-large  + em(1), em(99999999)) !default;
+$range-xsmall:  (0, em($breakpoint-small)) !default;
+$range-small:   (em($breakpoint-extra-small)  + em(1), em($breakpoint-small)) !default;
+$range-medium:  (em($breakpoint-small)        + em(1), em($breakpoint-medium)) !default;
+$range-large:   (em($breakpoint-medium)       + em(1), em($breakpoint-large))  !default;
+$range-xlarge:  (em($breakpoint-large)        + em(1), em($breakpoint-extra-large)) !default;
+$range-xxlarge: (em($breakpoint-extra-large)  + em(1), em(99999999)) !default;
 
 $xsmall-up: $screen !default;
 $xsmall-only: "#{$screen} and (max-width: #{upper-bound($range-xsmall)})" !default;
@@ -50,7 +50,7 @@ $ranges: (
         md:   $large-up,
         lg:   $xlarge-up,
         xlg:  $xxlarge-up,
-);
+) !default;
 
 $ranges-only: (
         xs:   $small-only,
@@ -58,10 +58,10 @@ $ranges-only: (
         md:   $large-only,
         lg:   $xlarge-only,
         xlg:  $xxlarge-only,
-);
+) !default;
 
 $grid-columns: 12 !default;
-$grid-gutter-width: em(30) !default;
+$grid-gutter-width: 30 !default;
 
 $container: container !default;
 $row: row !default;

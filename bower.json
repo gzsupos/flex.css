@@ -1,6 +1,6 @@
 {
   "name": "flex.css",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Flex based CSS grid",
   "main": "gulpfile.js",
   "authors": [
