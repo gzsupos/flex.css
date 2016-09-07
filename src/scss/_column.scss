@@ -1,13 +1,10 @@
-.#{$column} {
-  padding-left: $grid-gutter-width / 2;
-  padding-right: $grid-gutter-width / 2;
-}
-
 @each $name, $size in $ranges {
   @include media($name) {
     @for $i from 0 through $grid-columns {
       @if ($i == 0) {
         .#{$column}-#{$name} {
+          padding-left: $grid-gutter-width / 2;
+          padding-right: $grid-gutter-width / 2;
           flex-grow: 1;
           flex-basis: 0;
           max-width: 100%;
@@ -15,6 +12,8 @@
       }
       @else {
         .#{$column}-#{$name}-#{$i} {
+          padding-left: $grid-gutter-width / 2;
+          padding-right: $grid-gutter-width / 2;
           @include col($i);
         }
       }
