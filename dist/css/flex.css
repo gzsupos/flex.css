@@ -23,31 +23,31 @@ body {
 
 @media only screen and (min-width: 20.0625em) {
   .container-xs {
-    max-width: 320;
+    max-width: 320px;
   }
 }
 
 @media only screen and (min-width: 48.0625em) {
   .container-sm {
-    max-width: 768;
+    max-width: 768px;
   }
 }
 
 @media only screen and (min-width: 62.0625em) {
   .container-md {
-    max-width: 992;
+    max-width: 992px;
   }
 }
 
 @media only screen and (min-width: 80.0625em) {
   .container-lg {
-    max-width: 1280;
+    max-width: 1280px;
   }
 }
 
 @media only screen and (min-width: 90.0625em) {
   .container-xlg {
-    max-width: 1440;
+    max-width: 1440px;
   }
 }
 

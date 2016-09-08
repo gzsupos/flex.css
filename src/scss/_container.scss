@@ -5,7 +5,7 @@
 @each $name, $size in $breakpoints {
   @include media($name) {
     .#{$container}-#{$name} {
-      max-width: $size;
+      max-width: $size + px;
     }
   }
 }
