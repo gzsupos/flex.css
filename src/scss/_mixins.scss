@@ -4,6 +4,12 @@
   }
 }
 
+@mixin firefox-only() {
+  @-moz-document url-prefix() {
+    @content;
+  }
+}
+
 @mixin container($gutter: $grid-gutter-width) {
   margin-left: auto;
   margin-right: auto;
@@ -30,6 +36,9 @@
   flex: 0 0 percentage($size / $columns);
   width: percentage($size / $columns);
   @include ie-only {
+    max-width: percentage($size / $columns);
+  }
+  @include firefox-only {
     max-width: percentage($size / $columns);
   }
 }
